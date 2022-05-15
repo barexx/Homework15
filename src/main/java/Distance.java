@@ -5,6 +5,7 @@ public class Distance {
         System.out.println(distance + " m");
         Distance.Converter.toCM();
         Distance.Converter.toKM();
+        Distance.Converter.toMiles();
     }
 
     static class Converter {
@@ -16,6 +17,11 @@ public class Distance {
         static void toKM() {
             double distanceToKM = distance / 1000;
             System.out.println(distanceToKM + " km");
+        }
+
+        static void toMiles() {
+            double distanceToMiles = distance / 1609;
+            System.out.println(distanceToMiles + " miles");
         }
     }
 
